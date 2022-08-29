@@ -55,7 +55,7 @@ const props = defineProps({
 const emit = defineEmits(['update:sort','update:order'])
 
 const isAsc = computed(()=>{
-    props.sort == 'asc'
+    return props.sort == 'asc'
 })
 
 const setOrder = (field) => {
